@@ -8,6 +8,8 @@
 
 3) Видео уроки - https://www.youtube.com/playlist?list=PLA0M1Bcd0w8xZA3Kl1fYmOH_MfLpiYMRs
 
+5) soft delete - https://pypi.org/project/django-soft-delete/
+
 # Полезные команды
 
 1) Создание проекта Django - `pip install django`
