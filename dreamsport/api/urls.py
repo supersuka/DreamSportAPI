@@ -1,7 +1,7 @@
 from django.urls import path
 
-from api.views import TrainsView
+from api.views import WorkoutsView
 
 api_v1 = [
-    path('v1/trains/all', TrainsView.as_view())
+    path('v1/trains/all', WorkoutsView.as_view())
 ]

@@ -1,9 +1,9 @@
 from rest_framework import serializers
 
-from api.models import Trains
+from api.models import Workouts
 
 
 class TrainSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Trains
-        fields = "__all__"
+        model = Workouts
+        fields = "name", "description", "monday", "thuesday", "wednsday", "thursday", "friday", "saturday", "sunday", "approach"

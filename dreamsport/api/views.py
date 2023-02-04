@@ -1,10 +1,10 @@
 from rest_framework import generics
 
-from api.models import Trains
+from api.models import Workouts
 from api.serializers import TrainSerializer
 
 
 # Create your views here.
-class TrainsView(generics.ListAPIView):
-    queryset = Trains.objects.all()
+class WorkoutsView(generics.ListAPIView):
+    queryset = Workouts.objects.all()
     serializer_class = TrainSerializer
