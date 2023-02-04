@@ -1,11 +1,12 @@
 from django.db import models
+from django.contrib.auth.models import User
 from django_softdelete.models import SoftDeleteModel
-
 from .approach import Approach
 
 
 class Trains(SoftDeleteModel):
     name = models.CharField(max_length=255, verbose_name="Название")
+    user = models.ForeignKey(User, verbose_name="Пользователь", default=1, on_delete=models.CASCADE)
     description = models.TextField(null=True, verbose_name="Описание")
     monday = models.BooleanField(default=False, verbose_name="Понедельник")
     thuesday = models.BooleanField(default=False, verbose_name="Вторник")
