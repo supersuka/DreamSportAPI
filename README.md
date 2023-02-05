@@ -27,3 +27,5 @@
 7) Создание requirements.txt - `pip freeze > requirements.txt`
 
 8) Установка requirements.txt - `pip install -r requirements.txt`
+
+9) Запуск сервера в локальной сети - `python3 manage.py runserver 192.168.1.22:5404`
