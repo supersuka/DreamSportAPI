@@ -8,6 +8,7 @@ from .exercise_photos import ExercisePhotos
 class Exercise(SoftDeleteModel):
     name = models.CharField(max_length=255, verbose_name="Название")
     user = models.ForeignKey(User, verbose_name="Пользователь", on_delete=models.CASCADE)
+    description = models.TextField(null=True, verbose_name="Описание")
     valueType = models.SmallIntegerField(default=1, verbose_name="Мера измерения (кг, см)")
     countType = models.SmallIntegerField(default=1, verbose_name="Мера количества (шт, время(мм:сс))")
     considerOwnWeight = models.BooleanField(default=False, verbose_name="Учитывать собственный вес")
